@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="../css/main.css" type="text/css" />
     </head>
     <body>
+<<<<<<< Updated upstream
         <div id="container">
             <form>
                 <input type="text" id="login" name="login" value="Login">
@@ -10,5 +11,28 @@
                 <input onClick="login()" type="submit" value="Login"></input>
             </form>
         </div>
+=======
+        <form>
+            <input type="text" id="login" name="login" >
+            <input type="password" id="password" name="password" >
+            <button onClick="loguj()" type="button">Zaloguj</button>
+        </form>
+    
+        <p id = "p1"></p>
+    <script>
+        function loguj(){
+            var nazwa  = document.getElementById("login").value;
+            var pwd  = document.getElementById("password").value;        
+            if(nazwa!='usergr2' || pwd!="ZAQ!2wsx"){
+                document.getElementById("p1").innerHTML = "Zle hasło lub nazwa użytkownika";
+            }
+
+
+
+        }
+
+
+ </script>    
+>>>>>>> Stashed changes
     </body>
 </html>
