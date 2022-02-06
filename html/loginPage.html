@@ -7,20 +7,20 @@
             <form>
                 <input type="text" id="login" name="login" value="Login">
                 <input type="text" id="password" name="password" value="Password">
-                <input onClick="login()" type="submit" value="Login"></input>
+                <input onClick="loguj()" type="button" value="Login"></input>
             </form>
+            <p id = "p1"></p>
         </div>
-        <p id = "p1"></p>
-    <script>
+        
+    <script type="text/javascript">
         function loguj(){
             var nazwa  = document.getElementById("login").value;
             var pwd  = document.getElementById("password").value;        
             if(nazwa!='usergr2' || pwd!="ZAQ!2wsx"){
                 document.getElementById("p1").innerHTML = "Zle hasło lub nazwa użytkownika";
+                document.getElementById("p1").style.backgroundColor = "#001236";
             }
-
-
-
+            history.replaceState({}, null, "/index.html");
         }
 
 

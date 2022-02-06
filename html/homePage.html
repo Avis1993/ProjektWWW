@@ -3,6 +3,38 @@
 
     </head>
     <body>
-        
+        <div id="container">
+            <form>
+            <label for="eventy">Wybierz event:</label>
+            <select name="eventy" id="eventy" form="carform">
+                <option value="event1">even1</option>
+                <option value="event2">even2</option>
+                <option value="event3">event3</option>
+                <option value="event4">event4</option>
+            </select>
+            <label for="ludzie">Ile osob:</label>
+            <select name="ludzie" id="ludzie" form="carform">
+                <option value="jeden">1</option>
+                <option value="dwa">2</option>
+                <option value="trzy">3</option>
+                <option value="cztery">4</option>
+            </select>
+            <input onClick="get_event()" type="button" value="Login"></input>    
+            </form>
+        </div>
     </body>
+<script>
+    function get_event(){
+        var event  = document.getElementById("login").value;
+        var osoby  = document.getElementById("email").value;
+        window.alert(event, osoby);
+        /*if(pwd == "ZAQ!2wsx"){
+        document.getElementById("p1").innerHTML = "Konto zostało utworzone.";
+        }else{
+            document.getElementById("p1").innerHTML = "Konto już istnieje."
+            document.getElementById("p1").style.backgroundColor = "red"
+        }*/
+        history.replaceState({}, null, "/index.html");
+    }
+    </script>
 </html>
